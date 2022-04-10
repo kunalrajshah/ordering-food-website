@@ -1,0 +1,334 @@
+/* margin reset */
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+/*navigation bar: logo */
+#logo
+{
+  margin: 10px;
+}
+/*navigation bar: logo img */
+#navbar img
+{
+  margin: -8px;
+}
+/* navigation bar */
+#navbar
+{
+  display: flex;
+  align-items: center;
+}
+ul
+{
+  display: flex;
+  list-style: none;
+}
+li
+{
+  font-size: 1.3rem;
+}
+ a
+{
+  display: block;
+  padding: 3px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  color:black;
+}
+#navbar::before
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+a:hover
+{
+  color: black;
+  background-color: rgb(220, 221, 166);
+}
+/* Section home  */
+#home
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 69px 200px;
+  height:188px;
+}
+#home::before
+{
+  content: "";
+  background:url(../image/f1.jpg) no-repeat center center/cover;
+  position: absolute;  /*dout*/
+  width: 100%;
+  height: 65%;
+  bottom: 41%;
+  z-index: -1;
+  opacity: 0.58;
+}
+
+  /* heading css */
+  .ho
+  {
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px 1px;
+    padding: 14px;
+    text-align: center;
+  }
+  /* paragraph css */
+  #home p
+  {
+    font-weight: bold;
+    color: rgb(37, 35, 35);
+    text-align: center;
+    padding: 10px;
+  }
+  .box,.text-center
+  {
+    font-weight: 100px;
+    text-align: center;
+  }
+  #founder
+  {
+    text-shadow: 0.5px 0.5px rgb(142, 127, 227);
+  }
+  /* Button css */
+  .btn
+  {
+    border-radius: 4px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    padding: 4px 9px;
+  }
+  .btn:hover
+  {
+
+    color: wheat;
+  }
+  /* H2 css */
+  h2
+  {
+    display: flex;
+    justify-content: center;
+    padding: 47px;
+    font-size: 41px;
+  }
+  
+/* ---------------------- */
+/* Utility classes(heading,paragraph) */
+  .service1,.service2,.service3
+  {
+    text-align: center;
+    padding: 6px;
+    font-size: 24px;
+    text-shadow: 1px 1px red;
+  }
+  /* Services css */
+  #services
+  {
+    display: flex;
+    margin: 20px;
+  }
+  /* inside box css */
+  .box
+  {
+    border: 2px solid  #e40e0e;
+    margin: -35px 7px;
+    padding: 0px 39px;
+    height: 100%;
+    border-radius:23px;
+    width: 100%;
+    background-color:rgb(208 241 241);
+}
+/* image inside box */
+#services .box img
+{
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border-radius: 28px;
+}
+/* our Clients css */
+.client
+{
+  text-align: center;
+  padding:45px;
+  font-size: 30px;
+}
+#client-sec
+{
+  height: 295px;
+  padding: 3px;
+}
+#client
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-items
+{
+  margin:0px 44px;
+  padding: 0px 10px;
+}
+.client-items:hover
+{
+  width:85px;
+  height: 85px;
+}
+/* background image for clients */
+#client-sec::before
+{
+  content:"";
+  position: absolute;
+  background: url(../image/rock.jpg) no-repeat center center/cover; 
+  width: 100%;
+  height: 30%;
+  z-index: -1;
+  opacity: 0.5;
+  margin: 36px auto;
+  left: 0px;
+  right: 0px;
+}
+/* Contact Us css */
+.cus
+{
+  text-align: center;
+  font-size: 31px;
+  padding:0px;
+}
+.name
+{
+  font-weight: bold;
+  margin: 0.4rem 5rem;
+}
+#contact
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact input,
+#contact textarea
+{
+  border: 2px solid black;
+  border-radius: 4px;
+  width:74%;
+  padding: 0.4rem 1rem;
+  margin: 0.5rem 5rem;
+}
+#contact-us::before
+{
+  content:"";
+  position: absolute;
+  background: url(../image/cus.png) no-repeat center center/cover; 
+  width: 100%;
+  height: 60%;
+  z-index: -1;
+  opacity: 0.5;
+  margin: -48px auto;
+  left: 0px;
+  right: 0px;
+}
+/* contact button css */
+  .btnn
+  {
+    border-radius: 4px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    padding: 4px 67px;
+    margin: 0px 24rem;
+  }
+  .btnn:hover
+  {
+    color: wheat;
+  }
+  /* Founder introduction */
+  #myself::before
+  {
+    content:"";
+  position: absolute;
+  background: url(../image/introo.jpg) no-repeat center center/cover; 
+  width: 100%;
+  height: 52%;
+  z-index: -1;
+  opacity: 0.4;
+  margin: 5px auto;
+  left: 0px;
+  right: 0px;
+  }
+  #myself img
+  {
+    display: block;
+    margin: 0px auto;
+    width: 200px;
+    height: 171px;
+    border: 2px solid black;
+    border-radius: 23px;
+}
+  /* Heading  & Para css */
+  h3 span
+  {
+    color:rgb(53, 30, 201)
+  }
+  h3 span2
+  {
+    color:rgb(165, 10, 126);
+  }
+  #ceo
+  {
+    font-size: 29px;
+    margin: 0px 82px;
+    padding: 14px 84px;
+  }
+  #myself #writing
+  {
+    font-weight: bold;
+    color: #1e1922;
+    font-size: 22px;
+    text-align: center;
+    padding: 6px 8px;
+    margin: 9px auto;
+  }
+  /* css my image under heading */
+  #under
+  {
+    text-align: center;
+    color: rgb(118 13 13);;
+    font-size: 19px;
+  }
+  #under1
+  {
+    text-align: center;
+    color: rgb(69 35 35);
+    font-size: 13px;
+  }
+  #icon
+  {
+    display: flex;
+    justify-content: center;
+    padding: 0px 2px;
+    margin: 0px 2px;
+  }
+  /* footer css */
+  footer
+  {
+    background:black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+  }
